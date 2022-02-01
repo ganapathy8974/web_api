@@ -33,8 +33,7 @@ namespace webapi.Controllers
             }
             return StatusCode(404);
         }
-
-        // PUT: api/Employee/5
+       
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Employee employeeData)
         {
@@ -45,8 +44,7 @@ namespace webapi.Controllers
             }
                 return StatusCode(404);
         }
-
-        // DELETE: api/ApiWithActions/5
+        
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
